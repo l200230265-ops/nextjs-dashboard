@@ -3,7 +3,6 @@ import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
  
 export default async function Page() {
-  // Hanya ambil data customer, tidak perlu ID invoice
   const customers = await fetchCustomers();
  
   return (
@@ -21,4 +20,4 @@ export default async function Page() {
       <Form customers={customers} />
     </main>
   );
-}
+} 
